@@ -64,39 +64,6 @@ function PauseOrPlay(){
 video.addEventListener('click',PauseOrPlay);
 pauseplay.addEventListener('click',PauseOrPlay);
 
-/*
-video.addEventListener('click',()=>{
-      
-      if(video.paused){
-           video.play().catch(error => {                // play the video
-                  console.error("Error attempting to play the video:", error); 
-              }) && startProgress(true);                // start progress bar
 
-            pauseplay.innerHTML="❚❚";                   // display pause/play button
-            console.log(pauseplay.textContent)          // test
-      }
-      else{
-            video.pause();                             // pause the video
-            startProgress(false);                      // stop progress
-            pauseplay.innerHTML="►";                   // display pause/play 
-      }
-})
-
-pauseplay.addEventListener('click',()=>{
-      
-      if(video.paused){
-           video.play().catch(error => {                // play the video
-                  console.error("Error attempting to play the video:", error); 
-              }) && startProgress(true);                // start progress bar
-
-            pauseplay.innerHTML="❚❚";                   // display pause/play button
-            console.log(pauseplay.textContent)          // test
-      }
-      else{
-            video.pause();                             // pause the video
-            startProgress(false);                      // stop progress
-            pauseplay.innerHTML="►";                   // display pause/play 
-      }
-})*/
 
 
