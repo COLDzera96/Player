@@ -3,6 +3,8 @@
 const progress = document.querySelector('.progress__filled');
 const video = document.querySelector('video');
 const pauseplay = document.querySelector('.toggle');
+const Volslider = document.querySelector('input[name="volume"]');
+const playBackRate = document.querySelector('input[name="playbackRate"]')
 
 let videoDuration = 0;
 let laststage = 0;
@@ -64,6 +66,18 @@ function PauseOrPlay(){
 video.addEventListener('click',PauseOrPlay);
 pauseplay.addEventListener('click',PauseOrPlay);
 
+// Volume/Slider works below
 
+Volslider.addEventListener('input',()=>{
+      //check input level parameter
+      //set Volume , that's it
+      video.volume=Volslider.value;
+      console.log(Volslider.value)
+}
+)
+playBackRate.addEventListener('input',()=>{
+      video.playbackRate=playBackRate.value;
+      console.log(playBackRate.value);
+})
 
 
