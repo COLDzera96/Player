@@ -67,7 +67,9 @@ body {
 .player__button:focus {
   border-color: #ffc600;
 }
-
+.player__button:hover{
+  color:#ffc600;
+}
 .player__slider {
   width: 10px;
   height: 30px;
@@ -109,7 +111,8 @@ body {
 
 .progress__filled {
   width: 0%;
-  background: #ffc600;
+  /* background: #ffc600; */
+  background: rgb(29, 10, 244);
   flex: 0;
   flex-basis: 50%;
 }
@@ -141,7 +144,8 @@ input[type=range]::-webkit-slider-thumb {
   height: 15px;
   width: 15px;
   border-radius: 50px;
-  background: #ffc600;
+  /* background: #ffc600; */
+  background: rgb(29, 10, 244);
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -3.5px;
@@ -149,7 +153,8 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #bada55;
+  /* background: #bada55; */
+  background: rgb(176, 170, 248);
 }
 
 input[type=range]::-moz-range-track {

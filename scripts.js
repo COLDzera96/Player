@@ -48,7 +48,8 @@ function startProgress(playIt) {
             }
         }, 1000);
     } 
-    else if(playIt==0) {  // pausing logic    
+    else if(playIt==0) {  // pausing logic  
+        
         clearInterval(interval);
     } 
     else if (playIt==2){   // skip behind -10s
@@ -166,6 +167,6 @@ progdiv.addEventListener('mouseup',(e)=>{
     console.log(`${timeskip} seconds skipped`);
     
     laststage= (100/videoDuration)*timeskip;
-
+    handleProgress();   // for instant updation !
     console.log(`progress skipped by ${(100/videoDuration)*timeskip}`)
 })
